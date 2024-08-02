@@ -2,8 +2,7 @@ import streamlit as st
 import pandas as pd
 import pickle
 import numpy as np
-from scipy.spatial.distance import euclidean
-from sklearn.metrics.pairwise import euclidean_distances
+
 
 # load the model
 model = pickle.load(open('knn_model.sav', 'rb'))
