@@ -3,7 +3,14 @@ import pandas as pd
 import pickle
 import numpy as np
 
+import os
 
+file_path = 'knn_model.sav'
+if os.path.exists(file_path):
+    print(f"File found: {file_path}")
+else:
+    print(f"File not found: {file_path}")
+        
 # load the model
 model = pickle.load(open('knn_model.sav', 'rb'))
 
