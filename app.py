@@ -4,9 +4,9 @@ import pickle
 import numpy as np
         
 # load the model
-model = pickle.load(open(r'C:\Users\admin\Documents\MLStreamlite\knn_model.sav', 'rb'))
+model = pickle.load(open('knn_model.sav', 'rb'))
 
-st.image(r"e:\RSB_pic.jpg")
+st.image("RSB_pic.jpg")
 
 # Title and app definition
 st.title('Estimate the price of a house in Belgium')
